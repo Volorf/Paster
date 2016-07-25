@@ -8,7 +8,7 @@
 ![How it works](/paster_how-it-works.gif)
 
 ## Text data
-Text data is string that are on new line.
+Text data is strings that are on new line.
 
 ## How install the plugin
 1. [Download the zip file with the Texter](https://github.com/Volorf/Paster/archive/master.zip).
