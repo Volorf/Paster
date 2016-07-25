@@ -1,5 +1,6 @@
-![Paster](/paster-logo.png)
 # Paster — multi pasting for sketch text layers.
+![Paster](/paster-logo.png)
+
 
 ## How it works
 
