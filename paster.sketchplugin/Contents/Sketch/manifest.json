@@ -1,0 +1,25 @@
+{
+  "name": "Paster",
+  "description": "Multi pasting for sketch text layers",
+  "author": "Oleg Frolov",
+  "authorEmail": "frolololeg@gmail.com",
+  "homepage": "https://github.com/Volorf/Paster",
+  "version": 1.0,
+  "identifier": "com.example.sketch.paster",
+  "compatibleVersion": 1,
+  "bundleVersion": 1,
+  "commands": [
+    {
+      "name": "Paste",
+      "identifier": "paste",
+      "shortcut": "ctrl shift p",
+      "script": "paster.js",
+      "handler": "pasteData"
+    }
+  ],
+  "menu": {
+    "items": [
+      "paste"
+    ]
+  }
+}

@@ -1,13 +1,13 @@
 # Paster — multi pasting for sketch text layers.
 ![Paster](/paster-logo.png)
 
-
 ## How it works
+1. Copy some text;
+2. Select text layers in your artboart;
+3. Select menu item ```Plugin > Paster > Paste```.
 
-1. Select some text and press cmd+c;
-2. Select text layer in your artboart;
-3. Press cmd+v;
-4. PROFIT
+![How it works](/paster_how-it-works.gif)
+
 
 ## How install the plugin
 1. [Download the zip file with the Texter](https://github.com/Volorf/Paster/archive/master.zip).
