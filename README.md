@@ -1,7 +1,7 @@
-# Texter — ease paste text to text layers
+# Paster — ease paste text to text layers
 
 ## How it works
-![Texter](/sparkline-example.png)
+![Paster](/sparkline-example.png)
 1. Select some text and press cmd+c;
 2. Select text layer in your artboart;
 3. Press cmd+v;
