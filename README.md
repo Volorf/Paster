@@ -5,10 +5,13 @@
 1. Copy some text;
 2. Select text layers in your artboart;
 3. Click menu item ```Plugin > Paster > Paste```.
+
 ![How it works](/paster_how-it-works@2x.gif)
+
 
 ## Text data
 Text data is strings that are on new line.
+
 
 ## How install the plugin
 1. [Download the zip file with the Paster](https://github.com/Volorf/Paster/archive/master.zip).
