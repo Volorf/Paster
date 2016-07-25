@@ -1,4 +1,4 @@
-# Paster — paste data from clipbord to Sketch text layers.
+# Paster — paste data from clipboard to Sketch text layers.
 ![Paster](/paster-logo.png)
 
 ## How it works
