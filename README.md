@@ -1,11 +1,11 @@
 # Paster — multi pasting for sketch text layers.
-<!-- ![Paster](/paster-logo.png) -->
+![Paster](/paster-logo.png)
 
 ## How it works
 1. Copy some text;
 2. Select text layers in your artboart;
 3. Click menu item ```Plugin > Paster > Paste```.
-![How it works](/paster_how-it-works.gif)
+![How it works](/paster_how-it-works@2x.gif)
 
 ## Text data
 Text data is strings that are on new line.
