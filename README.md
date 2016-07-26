@@ -1,12 +1,13 @@
-# Paster — paste data from clipboard to Sketch text layers.
-![Paster](/paster-logo.png)
+# Paster — paste text data from clipboard to Sketch text layers.
+
+
+![Paster](/paster-sketch-plugin_volorf.gif)
+
 
 ## How it works
 1. Copy some text;
 2. Select text layers in your artboart;
 3. Click menu item ```Plugin > Paster > Paste```.
-
-![How it works](/paster_how-it-works@2x.gif)
 
 
 ## Text data
