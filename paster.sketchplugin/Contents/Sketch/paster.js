@@ -14,25 +14,31 @@ function pasteData(context) {
   // Turn data in the string type
   var stringFromPasteBoard = [pasteBoard stringForType:NSPasteboardTypeString];
 
-  // Set separator type. In the next version (1.1) you can change this.
+  // Contert a getting string to JS string
+  var stringThatWeNeed = String(stringFromPasteBoard)
+
+  stringThatWeNeed = stringThatWeNeed.replace(/ /g, "\n")
+
+  // Set separator type. In the next version (1.2) you can change this.
   var separator = "\n";
 
   // How many we meet separator in yout pasteboard data
-  var countOfSring = stringFromPasteBoard.search(separator);
+  var countOfSring = stringThatWeNeed.search(separator);
 
   // Create empty array from your pasteboardDara
   var arrayFromStringPasteBoard = [];
 
   // Fill array with data from pasteboard
   if (countOfSring <= 0) {
-      log("format your text for right format.")
+      doc.showMessage("Format your text for a right format ☝🏻");
   } else {
       // Fill array
-      arrayFromStringPasteBoard = stringFromPasteBoard.split(separator);
+      arrayFromStringPasteBoard = stringThatWeNeed.split(separator);
       // Populate pasteboard array with selected elements array
       for (var i=0; i<arrayLength; i++) {
         var layer = selection[i]
         layer.stringValue = arrayFromStringPasteBoard[i]
+        doc.showMessage("Done 👍🏻")
       };
 
   };
