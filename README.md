@@ -11,7 +11,7 @@
 
 
 ## Text data
-Text data is strings that are on new line.
+Text data is strings that are on new line or separated by spaces.
 
 
 ## How install the plugin
