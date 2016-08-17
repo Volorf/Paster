@@ -15,9 +15,10 @@ function pasteData(context) {
   var stringFromPasteBoard = [pasteBoard stringForType:NSPasteboardTypeString];
 
   // Contert a getting string to JS string
-  var stringThatWeNeed = String(stringFromPasteBoard)
+  var stringThatWeNeed = String(stringFromPasteBoard);
 
-  stringThatWeNeed = stringThatWeNeed.replace(/ /g, "\n")
+  // Convert spaces to \n
+  stringThatWeNeed = stringThatWeNeed.replace(/ /g, "\n");
 
   // Set separator type. In the next version (1.2) you can change this.
   var separator = "\n";
