@@ -11,7 +11,7 @@
 
 
 ## Text data
-Text data is strings that are on new line or separated by spaces.
+Text data is strings that are on new line or separated by spaces. Or you can just copy/paste your data from table (e.g. Excel).
 
 
 ## How install the plugin

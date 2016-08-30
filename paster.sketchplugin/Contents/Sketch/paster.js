@@ -15,13 +15,19 @@ function pasteData(context) {
   var stringFromPasteBoard = [pasteBoard stringForType:NSPasteboardTypeString];
 
   // Contert a getting string to JS string
-  var stringThatWeNeed = String(stringFromPasteBoard);
+  var stringFromPasteToJsString = String(stringFromPasteBoard);
 
-  // Convert spaces to \n
-  stringThatWeNeed = stringThatWeNeed.replace(/ /g, "\n");
+  // Remove horizontal tab U+0009
+  var stringWithoutHorizontalTab = stringFromPasteToJsString.replace(/\u0009/g, "\u0020");
+
+  // Remove vertical tab U+000B
+  var stringWithoutVerticalTab = stringWithoutHorizontalTab.replace(/\u000B/g, "\u0020");
+
+  // Remove \n
+  var stringThatWeNeed = stringWithoutVerticalTab.replace(/\n/g, "\u0020");
 
   // Set separator type. In the next version (1.2) you can change this.
-  var separator = "\n";
+  var separator = "\u0020";
 
   // How many we meet separator in yout pasteboard data
   var countOfSring = stringThatWeNeed.search(separator);
