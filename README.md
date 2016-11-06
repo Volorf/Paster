@@ -3,6 +3,8 @@
 
 ![Paster](/paster-sketch-plugin_volorf.gif)
 
+![Paster](/paster_13_volorf.gif)
+
 
 ## How it works
 1. Copy some text;
