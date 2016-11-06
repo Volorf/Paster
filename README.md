@@ -1,11 +1,5 @@
 # Paster — paste text data from clipboard to Sketch text layers.
 
-
-![Paster](/paster-sketch-plugin_volorf.gif)
-
-![Paster](/paster_13_volorf.gif)
-
-
 ## How it works
 1. Copy some text;
 2. Select text layers in your artboart;
@@ -14,6 +8,12 @@
 
 ## Text data
 Text data is strings that are on new line or separated by spaces. Or you can just copy/paste your data from table (e.g. Excel).
+
+### Plain text
+![Paster](/paster-sketch-plugin_volorf.gif)
+
+### Table data
+![Paster](/paster_13_volorf.gif)
 
 
 ## How install the plugin
