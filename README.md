@@ -2,8 +2,8 @@
 
 ## How it works
 1. Copy some text;
-2. Select text layers in your artboart;
-3. Click menu item ```Plugin > Paster > Paste```.
+2. Select text layers in your artboard;
+3. Click menu item ```Plugin > Paster > Paste``` to copy the same text to all selected layers. –– OR –– Click menu item ```Plugin > Paster > Paste special``` to distribute splitted chunks of the copied text among the selected layers.
 
 
 ## Text data
