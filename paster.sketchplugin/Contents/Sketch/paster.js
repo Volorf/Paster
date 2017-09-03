@@ -1,28 +1,23 @@
 var commaSeparator = "\u002C";
 var newLineSeparator = "\n";
 var spaceSeparator = "\u0020";
-var customSeparator = "";
 var tableHorizontalTabSeparator = "\u0009";
-var tableVerticalTabSeparator = "\u000B";
+// var tableVerticalTabSeparator = "\u000B";
+var tableVerticalTabSeparator = "\n";
 
-// Comma
+// Commas
 function pasteWithCommas (context) {
   paster(context, commaSeparator);
 };
 
-// New line
+// New lines
 function pasteWithNewLines (context) {
   paster(context, newLineSeparator);
 };
 
-// Space
-function pasteWithSpace (context) {
+// Spaces
+function pasteWithSpaces (context) {
   paster(context, spaceSeparator);
-};
-
-// Custom separator
-function pasteWithCustom (context) {
-  paster(context, customSeparator);
 };
 
 // Table row

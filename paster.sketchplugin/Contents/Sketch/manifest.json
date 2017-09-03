@@ -12,22 +12,46 @@
     {
       "name": "Commas",
       "identifier": "commas",
-      "shortcut": "ctrl shift c",
+      "shortcut": "ctrl shift 1",
       "script": "paster.js",
       "handler": "pasteWithCommas"
     },
     {
       "name": "New lines",
       "identifier": "newlines",
-      "shortcut": "ctrl shift n",
+      "shortcut": "ctrl shift 2",
       "script": "paster.js",
       "handler": "pasteWithNewLines"
+    },
+    {
+      "name": "Spaces",
+      "identifier": "spaces",
+      "shortcut": "ctrl shift 3",
+      "script": "paster.js",
+      "handler": "pasteWithSpaces"
+    },
+    {
+      "name": "Table row",
+      "identifier": "tablerow",
+      "shortcut": "ctrl shift 4",
+      "script": "paster.js",
+      "handler": "pasteFromTableRow"
+    },
+    {
+      "name": "Table column",
+      "identifier": "tablecolumn",
+      "shortcut": "ctrl shift 5",
+      "script": "paster.js",
+      "handler": "pasteFromTableColumn"
     }
   ],
   "menu": {
     "items": [
       "commas",
-      "newlines"
+      "newlines",
+      "spaces",
+      "tablerow",
+      "tablecolumn"
     ]
   }
 }
