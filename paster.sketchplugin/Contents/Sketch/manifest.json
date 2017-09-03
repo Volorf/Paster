@@ -1,25 +1,33 @@
 {
   "name": "Paster",
-  "description": "Multi pasting for sketch text layers",
+  "description": "Multi pasting for Sketch text layers",
   "author": "Oleg Frolov",
   "authorEmail": "frolololeg@gmail.com",
   "homepage": "https://github.com/Volorf/Paster",
-  "version": 1.3,
+  "version": 2.0,
   "identifier": "com.example.sketch.paster",
   "compatibleVersion": 1,
   "bundleVersion": 1,
   "commands": [
     {
-      "name": "Paste",
-      "identifier": "paste",
-      "shortcut": "ctrl shift p",
+      "name": "Commas",
+      "identifier": "commas",
+      "shortcut": "ctrl shift c",
       "script": "paster.js",
-      "handler": "pasteData"
+      "handler": "pasteWithCommas"
+    },
+    {
+      "name": "New lines",
+      "identifier": "newlines",
+      "shortcut": "ctrl shift n",
+      "script": "paster.js",
+      "handler": "pasteWithNewLines"
     }
   ],
   "menu": {
     "items": [
-      "paste"
+      "commas",
+      "newlines"
     ]
   }
 }
