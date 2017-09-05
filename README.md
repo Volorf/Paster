@@ -21,10 +21,10 @@ The Sketch plugin allows pasting a text data from the clipboard to Sketch layers
 ## Table row
 ![Table](/table_row.gif)
 
-##Table column
+## Table column
 ![Table](/table_column.gif)
 
-##How to install Paster
+## How to install Paster
 1. [Download the zip file with the Paster](https://github.com/Volorf/Paster/archive/master.zip).
 2. Double click on ```paster.sketchplugin```
 
