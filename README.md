@@ -1,6 +1,6 @@
 # Paster — pasting a text data from a clipboard to Sketch text layers.
 
-##New lines
+## New lines
 ![Paster 2.0](/paster_poster.gif)
 
 ## How it works
@@ -10,16 +10,16 @@
 
 The Sketch plugin allows pasting a text data from the clipboard to Sketch layers. **As a data separator, you can use commas, spaces, new lines and table cells**.
 
-##New lines
+## New lines
 ![New lines](/new_lines.gif)
 
-##Commas
+## Commas
 ![Commas](/commas.gif)
 
-##Spaces
+## Spaces
 ![Spaces](/spaces.gif)
 
-##Table row
+## Table row
 ![Table](/table_row.gif)
 
 ##Table column
