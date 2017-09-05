@@ -1,7 +1,6 @@
 # Paster — pasting a text data from a clipboard to Sketch text layers.
 
-## New lines
-![Paster 2.0](/paster_poster.gif)
+![Paster 2.0](/paster_poster.png)
 
 ## How it works
 1. Copy some text;
