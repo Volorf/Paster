@@ -12,14 +12,14 @@
     {
       "name": "Commas",
       "identifier": "commas",
-      "shortcut": "ctrl shift 1",
+      "shortcut": "ctrl shift 2",
       "script": "paster.js",
       "handler": "pasteWithCommas"
     },
     {
       "name": "New lines",
       "identifier": "newlines",
-      "shortcut": "ctrl shift 2",
+      "shortcut": "ctrl shift 1",
       "script": "paster.js",
       "handler": "pasteWithNewLines"
     },
@@ -47,8 +47,8 @@
   ],
   "menu": {
     "items": [
-      "commas",
       "newlines",
+      "commas",
       "spaces",
       "tablerow",
       "tablecolumn"
