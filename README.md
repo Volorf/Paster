@@ -28,4 +28,5 @@ The Sketch plugin allows pasting a text data from the clipboard to Sketch layers
 1. [Download the zip file with the Paster](https://github.com/Volorf/Paster/archive/master.zip).
 2. Double click on ```paster.sketchplugin```
 
-Great thanks for guys whose send me issues and shared me their ideas — . It helped me to improve the Paster. 
+## Thanks
+Great thanks for guys whose send me issues and shared me their ideas about improvements — @illus0r, @richardsison and many other people. It helped me to improve the Paster. 
