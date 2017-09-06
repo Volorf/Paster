@@ -1,53 +1,69 @@
-function pasteData(context) {
+var commaSeparator = "\u002C";
+var newLineSeparator = "\n";
+var spaceSeparator = "\u0020";
+var tableHorizontalTabSeparator = "\u0009";
+// var tableVerticalTabSeparator = "\u000B";
+var tableVerticalTabSeparator = "\n";
 
-  var doc = context.document;
+// Commas
+function pasteWithCommas (context) {
+  paster(context, commaSeparator);
+};
 
-  // Get selected elements from your artboard
-  var selection = context.selection;
+// New lines
+function pasteWithNewLines (context) {
+  paster(context, newLineSeparator);
+};
 
-  // Define array length of elements in your artboart
-  var arrayLength = selection.length;
+// Spaces
+function pasteWithSpaces (context) {
+  paster(context, spaceSeparator);
+};
 
-  // Get data from your pasteboard
-  var pasteBoard = NSPasteboard.generalPasteboard();
+// Table row
+function pasteFromTableRow (context) {
+  paster(context, tableHorizontalTabSeparator);
+};
 
-  // Turn data in the string type
-  var stringFromPasteBoard = [pasteBoard stringForType:NSPasteboardTypeString];
+// Table column
+function pasteFromTableColumn (context) {
+  paster(context, tableVerticalTabSeparator);
+};
 
-  // Contert a getting string to JS string
-  var stringFromPasteToJsString = String(stringFromPasteBoard);
 
-  // Remove horizontal tab U+0009
-  var stringWithoutHorizontalTab = stringFromPasteToJsString.replace(/\u0009/g, "\u0020");
+// Main func
+function paster (context, separator) {
+    //
+    var doc = context.document;
+    // Get a data from your pasteboard
+    // doc.showMessage("hi");
+    var pasteBoard = NSPasteboard.generalPasteboard();
+    // Turn a data in the string type
+    var stringFromPasteBoard = [pasteBoard stringForType:NSPasteboardTypeString];
+    //
+    var sep = separator;
+    // Get selected elements from your artboard
+    var selection = context.selection;
+    // Define an array length of elements in your artboard
+    var arrayLength = selection.length;
+    // Contert a getting string to a JS string
+    var jsString = String(stringFromPasteBoard);
+    // How many we meet a separator in your pasteboard data
+    var countOfSring = jsString.search(sep);
+    // Create empty array from your pasteboardDara
+    var arrayFromStringPasteBoard = [];
 
-  // Remove vertical tab U+000B
-  var stringWithoutVerticalTab = stringWithoutHorizontalTab.replace(/\u000B/g, "\u0020");
-
-  // Remove \n
-  var stringThatWeNeed = stringWithoutVerticalTab.replace(/\n/g, "\u0020");
-
-  // Set separator type. In the next version (1.2) you can change this.
-  var separator = "\u0020";
-
-  // How many we meet separator in yout pasteboard data
-  var countOfSring = stringThatWeNeed.search(separator);
-
-  // Create empty array from your pasteboardDara
-  var arrayFromStringPasteBoard = [];
-
-  // Fill array with data from pasteboard
-  if (countOfSring <= 0) {
-      doc.showMessage("Format your text for a right format ☝🏻");
-  } else {
-      // Fill array
-      arrayFromStringPasteBoard = stringThatWeNeed.split(separator);
-      // Populate pasteboard array with selected elements array
-      for (var i=0; i<arrayLength; i++) {
+     // Fill an array with a data from a pasteboard
+    if (countOfSring <= 0) {
+      doc.showMessage("Format your text for a right format ☝");
+    } else {
+      // Fill an array
+      arrayFromStringPasteBoard = jsString.split(sep);
+      // Populate a pasteboard array with a selected elements array
+      for (var i = 0; i < arrayLength; i++) {
         var layer = selection[i]
         layer.stringValue = arrayFromStringPasteBoard[i]
-        doc.showMessage("Done 👍🏻")
+        doc.showMessage("Done 👍")
       };
-
-  };
-
-}
+    };   
+};
